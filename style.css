@@ -13,13 +13,36 @@ header {
     background-color: black;
     width: 100vw;
     height: 15vh;
-    border-bottom: thick double whitesmoke;
+    border-bottom: 0.2rem solid whitesmoke;
 }
 
 .Logo {
     color: rgb(255, 172, 17);
     text-decoration: none;
     top: 0;
+    left: 0;
     margin-top: 1.25vw;
     margin-left: 1vw;
+}
+
+.GradBlur {
+    top: 2px;
+    left: 5.5px;
+    filter: blur(1.5rem);
+    z-index: -1;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 172, 17, 0.288);
+    width: 7.5vw;
+    height: 7.5vw;
+}
+
+#TitleName {
+    font-size: 4rem;
+    margin-top: 7.5vh;
+    margin-left: 4vw;
+    position: absolute;
+    color: aliceblue;
+    z-index: -1;
+    top: 20vh
 }
