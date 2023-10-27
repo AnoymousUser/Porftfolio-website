@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    z-index: 6;
     position: fixed;
     background-color: black;
     width: 100vw;
@@ -29,7 +30,7 @@ header {
     top: 2px;
     left: 5.5px;
     filter: blur(1.5rem);
-    z-index: -1;
+    z-index: 5;
     position: absolute;
     border-radius: 50%;
     background-color: rgba(255, 172, 17, 0.288);
@@ -43,6 +44,21 @@ header {
     margin-left: 4vw;
     position: absolute;
     color: aliceblue;
-    z-index: -1;
+    z-index: 4;
     top: 20vh
+}
+
+#GradientDot {
+    position: absolute;
+    top: 150px;
+    left: 37.5px;
+    z-index: 4;
+    width: 34vw;
+    height: 21vh;
+    background-image: 
+    radial-gradient(rgb(196, 132, 14) 10%, transparent 10%),
+    radial-gradient(rgb(196, 133, 15) 10%, transparent 10%);
+    background-position: 0px 0px, 28px 28px;
+    background-size: 56px 56px;
+    background-color: rgb(0, 0, 0);
 }
